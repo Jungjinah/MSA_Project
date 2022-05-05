@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS BOARD;
+
+CREATE TABLE BOARD (
+    ID BIGINT NOT NULL AUTO_INCREMENT,
+    TITLE VARCHAR(50) NOT NULL,
+    CONTENTS TEXT NOT NULL,
+    REG_DT DATETIME NOT NULL,
+    UPD_DT DATETIME,
+    PRIMARY KEY (id)
+);
+
+use mysql;
+
+select * from BOARD;
+
+insert into BOARD value ('1','되게해줘요','끝내고싶어','2022-05-02','2022-05-02');
